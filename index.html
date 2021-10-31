@@ -77,19 +77,20 @@
       100% { color: #fff;
       }
     }
-
-    .topimg{
-      filter: blur(200px);
-      animation: blur-anim 4s linear forwards;
+    @media screen and (min-width: 481px) {
+      .topimg{
+        filter: blur(200px);
+        animation: blur-anim 4s linear forwards;
+      }
+      @keyframes blur-anim {
+        50% { filter: blur(500px);
+        }
+        100% { filter: blur(0);
+        }
+      }
+      </style>
     }
 
-    @keyframes blur-anim {
-      50% { filter: blur(500px);
-      }
-      100% { filter: blur(0);
-      }
-    }
-    </style>
 
     <title>index</title>
   </head>
@@ -99,7 +100,7 @@
       <nav class="fixed-top navbar head-bg">
         <div class="container-fluid">
           <div class="navbar-brand head-text">SAKANACTION</div>
-          <div class="navbar-toggler head-text border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="navbar-toggler head-text border-0" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="openbtn head-bg"><span></span><span></span></div>
           </div>
           <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent">
@@ -276,7 +277,7 @@
                   <div class="fw-bold display-4 text-muted" style="line-height: 1em;">STORE</div>
                 </div>
                 <div class="mb-5 text-center">
-                  <a type="button" class="btn btn-outline-dark btn-md" href="https://sakanaction.lnk.to/shinshiro">
+                  <a class="btn btn-outline-dark btn-md" href="https://sakanaction.lnk.to/shinshiro">
                     <p class="display-6">Digital・CD</p>
                   </a>
                 </div>
