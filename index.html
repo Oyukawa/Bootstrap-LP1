@@ -77,9 +77,20 @@
       100% { color: #fff;
       }
     }
+    @media screen and (min-width: 481px) {
+      .topimg{
+        filter: blur(200px);
+        animation: blur-anim 4s linear forwards;
+      }
+      @keyframes blur-anim {
+        50% { filter: blur(500px);
+        }
+        100% { filter: blur(0);
+        }
+      }
+      </style>
+    }
 
-    
-    </style>
 
     <title>index</title>
   </head>
