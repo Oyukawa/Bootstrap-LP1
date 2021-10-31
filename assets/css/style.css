@@ -18,11 +18,6 @@
   }
 }
 
-[type]{
-  -webkit-appearance: none;
-}
-
-
 /** ナビゲーションバー **/
  /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
  .openbtn{
