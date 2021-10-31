@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <!-- レスポンシブ用メタタグ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BootstapのCSS読み込み -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- BootstapのCSS読み込み -->
+    <link href="assets/css/lity.min.css" rel="stylesheet">
+    <!-- オリジナルCSS読み込み -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- CSSの書き込み -->
+    <style>
+    /* 初期画面アニメーション*/
+    .first {
+      position:absolute;
+      z-index: 999;
+      background-color : #000;
+      width: 100%;
+      height: 85%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      filter: opacity(100%);
+      animation: first-anim 2s linear forwards;
+    }
+
+    @keyframes first-anim {
+      50% { filter: opacity(100%);
+      }
+      100% { filter: opacity(0%);
+      }
+    }
+
+    .all{
+      position:relative;
+      z-index: 10;
+    }
+
+    .all{
+      filter: brightness(0%);
+      animation: all-anim 4s linear forwards;
+    }
+
+    @keyframes all-anim {
+      50% { filter: brightness(0%);
+      }
+      100% { filter: brightness(100%);
+      }
+    }
+
+
+    .head-bg {
+      background-color: #000;
+      animation: headbg-anim 3s linear forwards;
+    }
+
+    @keyframes headbg-anim {
+      80% { background-color: #000;
+      }
+      100% { background-color: #212529;
+      }
+    }
+
+    .head-text {
+      color: #000;
+      animation: headtx-anim 3s linear forwards;
+    }
+
+    @keyframes headtx-anim {
+      50% { color: #000;
+      }
+      100% { color: #fff;
+      }
+    }
+
+    .topimg{
+      filter: blur(200px);
+      animation: blur-anim 4s linear forwards;
+    }
+
+    @keyframes blur-anim {
+      50% { filter: blur(500px);
+      }
+      100% { filter: blur(0);
+      }
+    }
+    </style>
+
+    <title>index</title>
+  </head>
+
+  <body>
+    <header class="mb-5">
+      <nav class="fixed-top navbar head-bg">
+        <div class="container-fluid">
+          <div class="navbar-brand head-text">SAKANACTION</div>
+          <div class="navbar-toggler head-text border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="openbtn head-bg"><span></span><span></span></div>
+          </div>
+          <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">TOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#video">VIDEO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#release">RELEASE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#store">STORE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#link">LINK</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+      <div class="first"><p class="display-1 fw-bold text-light text-center">sakanaction</p></div>
+      <div class="all bg-white">
+        <!--Title -->
+        <section id="title">
+          <div class="container mt-5 pt-5 text-center">
+            <div class="fw-bold display-2" style="line-height: 1em;">シ ン シ ロ</div>
+            <label class="h1 text-muted">January 21,2009</label>
+          </div>
+        </section>
+
+        <!-- main -->
+        <main class="container">
+          <div class="row">
+            <div class="col-md-1 col-0"></div>
+            <div class="col-md-10 col-12">
+              <section id="top">
+                <div class="mb-4">
+                  <img class="w-100 mx-auto topimg" src="assets/img/top.jpg"></img>
+                </div>
+              </section>
+
+              <section id="lyric">
+                <div class="container">
+                  <div class="row mt-4 pt-3 pb-3 bg-light">
+                    <div class="text-muted text-end">
+                      <div class="display-4 text-dark mb-3">新しい白</div>
+                      <p class="fs-lead">サカナクションというスケッチブックがあって<br>そこに1st、2ndで色んなものを置いて来たけど<br>今回のアルバムを作る際に、一回それを<br>全部取っ払って<br>
+                        元々あった場所にそれを置いても良いけど<br>とりあえずもう一回全部置き直す<br>新しい白、新色の白を作るつもりで。</p>
+                        <a class="text-muted fs-lead fs-link" href="https://web.archive.org/web/20150227012743/http://www.excite.co.jp/music/close_up/interview/0901_sakana/?lead=2">interview from "Excite" .p. 1-2. 2015/8/23</a>
+                    </div>
+                  </div>
+
+                  <div class="row mt-4 pt-3 pb-3 bg-dark">
+                    <div class="text-light text-start">
+                      <div class="display-4 text-white mb-3">3rd Album</div>
+                      <p class="fs-lead">
+                        活動拠点を東京に移し、初めて制作されたアルバム。
+                        <br>オリコンウィークリーチャートで初登場8位を獲得。<br>「ネイティブダンサー」のMUSIC VIDEOがネット上で大きな話題となるなど、高度な作品性以外にもバンドが発信する表現の独自性も高く評価され、
+                        2010年代のロックシーンを牽引するバンドとして注目を集める。<br>全11曲収録。</p>
+                        <a class="text-light fs-lead fs-link" href="https://www.jvcmusic.co.jp/-/Discography/A020936/VICL-64345.html">Victor Entertainment</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="video">
+                <div class="mt-5  mb-4 text-center">
+                  <div class="fw-bold display-4 text-muted" style="line-height: 1em;">VIDEO</div>
+                </div>
+                <div class="text-center">
+                  <a class="btn video" href="https://www.youtube-nocookie.com/embed/qGyRgcfZwWI" data-lity="">
+                    <img src="assets/img/ネイティブダンサー.jpg" class="d-block w-100">
+                  </a>
+                  <a class="btn video" href="https://www.youtube.com/watch?v=7Maq09mKVnQ" data-lity="">
+                    <img src="assets/img/セントレイ.jpg" class="d-block w-100">
+                  </a>
+                </div>
+              </section>
+
+              <section id="release">
+                <div class="container mt-5  mb-4 text-center">
+                  <div class="fw-bold display-4 text-muted" style="line-height: 1em;">RELEASE</div>
+                </div>
+                <div class="container mb-3">
+                  <div class="card mx-auto d-block w-75">
+                    <img src="assets/img/ジャケット.jpg" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      <p class="border-bottom pb-2 fw-bold">通常版</p>
+                      <p class="">VICL-63224 \2,724(税込み)</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container accordion">
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed fs-lead" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        アルバム「シンシロ」収録内容
+                      </button>
+                    </div>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body fs-lead text-dark">
+                        <ul class="list-inline">
+            							<li>
+            								<div class="textBlock01">
+                              <p class="text01">全作詞：山口一郎</p>
+            									<p class="text01">1.Ame（B）<br> 作曲：山口一郎</p>
+            								<!-- /textBlock01 --></div>
+            							</li>
+            							<li>
+            								<div class="textBlock01">
+            									<p class="text01">2.ライトダンス<br> 作曲：山口一郎</p>
+            								<!-- /textBlock01 --></div>
+            							</li>
+            							<li>
+            								<div class="textBlock01">
+            									<p class="text01">3.セントレイ<br> 作曲：山口一郎</p>
+            								<!-- /textBlock01 --></div>
+            							</li>
+            							<li>
+            								<div class="textBlock01">
+            									<p class="text01">4.ネイティブダンサー<br> 作曲：山口一郎</p>
+            								<!-- /textBlock01 --></div>
+            							</li>
+            							<li>
+            								<div class="textBlock01">
+            									<p class="text01">5.minnanouta<br> 作曲：サカナクション</p>
+            								<!-- /textBlock01 --></div>
+            							</li>
+            							<li>
+            								<div class="textBlock01">
+            									<p class="text01">6.雑踏<br> 作曲：山口一郎</p>
+            								<!-- /textBlock01 --></div>
+            							</li>
+            							<li>
+            								<div class="textBlock01">
+            									<p class="text01">7. 黄色い車<br> 作曲：山口一郎</p>
+            								<!-- /textBlock01 --></div>
+            							</li>
+            							<li>
+            								<div class="textBlock01">
+            									<p class="text01">8.enough<br> 作曲：山口一郎</p>
+            								<!-- /textBlock01 --></div>
+            							</li>
+            							<li>
+            								<div class="textBlock01">
+            									<p class="text01">9.涙ディライト<br> 作曲：山口一郎</p>
+            								<!-- /textBlock01 --></div>
+            							</li>
+            							<li>
+            								<div class="textBlock01">
+            									<p class="text01">10.アドベンチャー<br> 作曲：山口一郎</p>
+            								<!-- /textBlock01 --></div>
+            							</li>
+                          <li>
+            								<div class="textBlock01">
+            									<p class="text01">11.Human<br> 作曲：山口一郎</p>
+            								<!-- /textBlock01 --></div>
+            							</li>
+          						  </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="store">
+                <div class="container mt-5  mb-4 text-center">
+                  <div class="fw-bold display-4 text-muted" style="line-height: 1em;">STORE</div>
+                </div>
+                <div class="mb-5 text-center">
+                  <a type="button" class="btn btn-outline-dark btn-md" href="https://sakanaction.lnk.to/shinshiro">
+                    <p class="display-6">Digital・CD</p>
+                  </a>
+                </div>
+              </section>
+
+              <section id="link">
+                <div class="container mt-5  mb-3 text-center">
+                  <div class="fw-bold display-4 text-muted" style="line-height: 1em;">L I N K</div>
+                </div>
+                <div class="container text-center">
+                  <a class="btn" href="https://sakanaction.jp/">
+                    <p class="fs-lead">サカナクション公式サイト</p>
+                  </a>
+                </div>
+              </section>
+            </div>
+            <!-- FOOTER -->
+            <footer class="container">
+              <hr class="featurette-divider">
+              <div class="mb-1">
+                <p>create by one of the fans made</p>
+              </div>
+            </footer>
+            <div class="col-md-1 col-0"></div>
+          </div>
+        </main>
+      </div>
+
+    <!-- BootstapのJS読み込み -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/lity.min.js"></script>
+    <script src="assets/js/style.js"></script>
+    <!-- JSの書き込み -->
+  </body>
+</html>
